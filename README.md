@@ -30,3 +30,4 @@ Na PI02, as atividades estavam focadas na segunda semana do curso, abordando tó
 - **Semana 2: Desenvolvimento Avançado em Python**
   - Aplicação dos conhecimentos adquiridos na PI01 em projetos mais complexos.
   - Trabalho prático com estruturas de dados, funções e módulos Python.
+
