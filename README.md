@@ -6,6 +6,14 @@
 - **Nome:** Leandro Garcia
 - **E-mail:** ifbaianoleo@gmail.com
 
+- **Nome:** Alexandre Amaral
+- **E-mail:** alexandreamaral.gt@gmail.com
+
+**Nome:** Felipe Gregue
+**E-mail:** felipe_gregue@hotmail.com
+
+**Nome:
+
 ### Atividade (PI01)
 
 Na PI01, realizamos atividades relacionadas à primeira semana do curso de Python. As principais tarefas incluíram:
