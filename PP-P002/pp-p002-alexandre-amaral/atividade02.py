@@ -1,6 +1,25 @@
 
+def loadTasksFromFile():
+    task_id = 0
+    task_list = []
+    try:
+        tasks_file = open("tasks.txt", "r")
+        for task in tasks_file:
+            task_list.append(task.split("\n")[0])
+            task_id += 1
+        tasks_file.close()
+        return task_id, task_list
+    except FileNotFoundError:
+        print("Arquivo de tarefas não encontrado. Criando novo arquivo 'tasks.txt'.")
+        with open("tasks.txt", "w"):
+            pass
+        return task_id, task_list
+    except Exception as e:
+        print(f"Erro ao carregar as tarefas: {e}")
+        return task_id, task_list
+
 def main():
-    id
+    task_id ,task_list = loadTasksFromFile()
     while True:
         print("////////// MENU //////////")
         print("1- Adcionar Tarefa")
@@ -11,17 +30,20 @@ def main():
         op = int(input())
 
         match op:
-            case 0:
-                
-                break
             case 1:
-                break
+                print("Informe a descrição da tarefa:")
+                description = input()
+                task = str(task_id) + ".\t" + description.capitalize() + "[ ]"
+                task_list.append(task)
+                task_id += 1
             case 2:
                 break
             case 3:
                 break
             case 4:
                break
+            case 5:
+                break
             case _:
                 print("Opção inválida")
                 
