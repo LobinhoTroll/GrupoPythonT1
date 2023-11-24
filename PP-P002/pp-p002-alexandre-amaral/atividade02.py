@@ -43,7 +43,7 @@ def main():
         print("2- Marcar como Realizada")
         print("3- Editar Tarefa")
         print("4- Listar As Tarefas")
-        print("0- Sair do programa")
+        print("5- Sair do programa")
         op = int(input())
 
         match op:
@@ -62,14 +62,27 @@ def main():
                 except:
                     continue
             case 3:
-                break
+                print("Informe o ID da tarefa:")
+                identifier = int(input())
+                try:
+                    status = "[X]" if task_list[identifier].find("[X]") != -1 else "[ ]"
+                    print("Informe a nova descrição:")
+                    description = input()
+                    task_list[identifier] = str(identifier) + ".\t" + description.capitalize() + status
+                except:
+                    print("Tarefa não encontrada")
             case 4:
-               break
+                for task in task_list:
+                    if task.find("[X]") != -1:
+                        print(task)
+                for task in task_list:
+                    if task.find("[ ]") != -1:
+                        print(task)
             case 5:
                 saveTasksToFile(task_list)
                 break
             case _:
                 print("Opção inválida")
-                
+
 if __name__ == "__main__":
     main()

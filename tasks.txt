@@ -1,2 +1,4 @@
 0.	Tarefa[ ]
 1.	Tarefaa[X]
+2.	Nada nao[X]
+3.	Fazer alguma coisa[X]
