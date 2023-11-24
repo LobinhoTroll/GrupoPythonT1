@@ -6,13 +6,14 @@
 - **Nome:** Leandro Garcia
 - **E-mail:** ifbaianoleo@gmail.com
 
-- **Nome:** Alexandre Amaral
-- **E-mail:** alexandreamaral.gt@gmail.com
+- **Nome:** Gabriel Teles
+- **E-mail:** gabrielteles931@gmail.com
 
-**Nome:** Felipe Gregue
-**E-mail:** felipe_gregue@hotmail.com
+- **Nome:** Felipe Gregue
+- **E-mail:** felipe_gregue@hotmail.com
 
-**Nome:
+- **Nome:** Alexandre amaral
+- **E-mail:** Alexandreamaral.gt@gmail.com
 
 ### Atividade (PI01)
 
