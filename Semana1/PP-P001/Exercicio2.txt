@@ -1,0 +1,74 @@
+Exercicio 2.1
+
+Básicos: +, -, *, /, //, %, **.
+Compostos: +=, -=, *=, /=, //=, %=
+Diferenças: Divisão de inteiros retorna um ponto flutuante
+            Tipagem Dinâmica
+            Uso do exponencial **
+            Operadores Compostos
+
+Exercicio 2.2
+
+O valor máximo que um inteiro de 32 bits pode representar em C/C++ é 2 elevado a 31 - 1.
+Por outro lado, em Python, o resultado foi 2 elevado a 108.43.
+Dessa forma, é possível ver que a representação em Python é muito maior.
+
+Exercicio 2.3
+
+Imutabilidade de Inteiros:
+a = 5
+a = a + 3
+print(a)
+
+Isso resultará em um erro, pois inteiros são imutáveis
+
+Imutabilidade de Ponto Flutuante
+b = 3.14
+b = b * 2.0
+print (b)
+
+Isso resultará em um erro, pois números de ponto flutuante são imutáveis
+
+Imutabilidade de Tuplas
+tupla = (1, 2, 3)
+tupla[0] = 10
+print(tupla)
+
+Isso resultará em um erro, pois tuplas são imutáveis
+
+Exercicio 2.4
+
+    inteiro = 42
+    print(dir(inteiro))
+    
+    Métodos Aritméticos:
+        __add__(self, value) - Adição.
+        __sub__(self, value) - Subtração.
+        __mul__(self, value) - Multiplicação.
+        __floordiv__(self, value) - Divisão inteira.
+        __truediv__(self, value) - Divisão real.
+        __mod__(self, value) - Módulo.
+        __divmod__(self, value) - Retorna a tupla (divisão, módulo).
+
+    Métodos Bit a Bit:
+        __and__(self, value) - AND bit a bit.
+        __or__(self, value) - OR bit a bit.
+        __xor__(self, value) - XOR bit a bit.
+        __invert__(self) - Inversão bit a bit.
+
+    Métodos de Comparação:
+        __eq__(self, value) - Igualdade.
+        __ne__(self, value) - Desigualdade.
+        __lt__(self, value) - Menor que.
+        __le__(self, value) - Menor ou igual a.
+        __gt__(self, value) - Maior que.
+        __ge__(self, value) - Maior ou igual a.
+
+    Métodos de Conversão:
+        __bool__(self) - Retorna False se o valor for zero, True caso contrário.
+        __index__(self) - Retorna a representação de índice do inteiro.
+
+    Outros Métodos:
+        __abs__(self) - Valor absoluto.
+        __pow__(self, exponent[, modulo]) - Potência.
+
