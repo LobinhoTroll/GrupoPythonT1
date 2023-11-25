@@ -1,5 +1,6 @@
 from Supermercado import f_inserir_produto
 from Supermercado import f_excluir_produto
+from Supermercado import f_listar_produtos
 
 def main():
     while True:
@@ -14,6 +15,7 @@ def main():
 
         opcao = int(input("Escolha uma opção: "))
         print(" ")
+        
 
         if opcao == 1:
             f_inserir_produto.inserirProduto()
@@ -24,7 +26,7 @@ def main():
             print(" ")  
                      
         elif opcao == 3:
-            print("3")
+            f_listar_produtos.listaProdutos()
             print(" ")
             
         elif opcao == 4:
