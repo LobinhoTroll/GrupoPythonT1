@@ -17,5 +17,4 @@ def imprimir_em_lotes(lista):
 
 def listaProdutos():
     listaDeProdutos.sort(key=lambda x: float(x['preco']))
-
     imprimir_em_lotes(listaDeProdutos)

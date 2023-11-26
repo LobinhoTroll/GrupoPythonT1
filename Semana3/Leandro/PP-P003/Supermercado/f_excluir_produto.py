@@ -12,6 +12,7 @@ def excluirProduto():
             if produto[chaveProcurada] == codigoProcurado:
                 del listaDeProdutos[index]
                 print("Produto removido com sucesso!")
+                print("\n")
                 achou = True
                 break
         
@@ -19,9 +20,6 @@ def excluirProduto():
         
     if not achou:  # Verifica se achou é False
         print("Produto não encontrado. Certifique-se de que digitou o código corretamente.")
+        print("\n")
         
-    print(listaDeProdutos)
-        
- 
-    
     
