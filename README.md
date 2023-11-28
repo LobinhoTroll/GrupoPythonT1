@@ -24,7 +24,7 @@ Na PI02, as atividades estavam focadas na segunda semana do curso, abordando tó
 Na PI03, as atividades estavam focadas na terceira semana do curso, abordando tópicos mais avançados e práticos. Algumas das atividades realizadas foram:
 
 - **Semana 3: Desenvolvimento Avançado utilizando funções em Python**
-- Aplicação dos conhecimentos adquiridos na PI02 em projetos mais complexos.
-- Trabalho prático utilizando funções, iteração avançada e compreensões de lista e dicionário.
+  - Aplicação dos conhecimentos adquiridos na PI02 em projetos mais complexos.
+  - Trabalho prático utilizando funções, iteração avançada e compreensões de lista e dicionário.
 
 
