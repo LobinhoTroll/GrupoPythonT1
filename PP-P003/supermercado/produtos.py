@@ -30,3 +30,13 @@ def listar_produtos(estoque):
             if opcao != 's':
                 return
 
+
+def excluir_produto(estoque):
+    print("Digite o código do produto a ser removido")
+    codigo = input().zfill(13)
+    for item in estoque[:]:
+        if item["codigo"] == codigo:
+            estoque.remove(item)
+            print("Produto removido com sucesso.")
+            return
+    print("Produto não encontrado.")

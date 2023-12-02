@@ -15,7 +15,7 @@ def main():
             case 1:
                 p.cadastrar_novo_produto(produtos)
             case 2:
-                break
+                p.excluir_produto(produtos)
             case 3:
                 p.listar_produtos(produtos)
             case 4:
