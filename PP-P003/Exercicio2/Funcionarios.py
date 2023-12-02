@@ -43,7 +43,11 @@ def consultarFuncionarioPorRG(lista_funcionarios):
             print(f"Ano de admissão: {func['admissao']}")
             print(f"Salário: R${func['salario']: .2f}")
 
-
+def reajustarSalariosDezPorcento(lista_funcionarios):
+    for func in lista_funcionarios:
+        salario = func["salario"]
+        salario += salario * 0.1
+        func["salario"] = salario
 
 def carregarFuncionariosDoArquivo():
     lista_funcionarios = []

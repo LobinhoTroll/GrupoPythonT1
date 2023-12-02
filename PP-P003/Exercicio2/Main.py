@@ -1,6 +1,6 @@
 from Funcionarios import (cadastrarNovoFuncionario, excluirFuncionario, listarTodosFuncionarios,
                                 consultarFuncionarioPorRG,
-                                carregarFuncionariosDoArquivo, salvarFuncionariosNoArquivo)
+                                carregarFuncionariosDoArquivo,reajustarSalariosDezPorcento, salvarFuncionariosNoArquivo)
 
 def main():
     funcionarios = carregarFuncionariosDoArquivo()
@@ -25,7 +25,8 @@ def main():
         elif opcao == "4":
             consultarFuncionarioPorRG(funcionarios)
         elif opcao == "5":
-            break
+            reajustarSalariosDezPorcento(funcionarios)
+            print("Salários reajustados em 10%")
         elif opcao == "6":
             salvarFuncionariosNoArquivo(funcionarios)
             print("Saindo...")
