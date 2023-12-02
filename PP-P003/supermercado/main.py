@@ -1,3 +1,5 @@
+import produtos as p
+
 def main():
     produtos = []
     op = -1
@@ -11,11 +13,11 @@ def main():
         op = int(input())
         match op:
             case 1:
-                break
+                p.cadastrar_novo_produto(produtos)
             case 2:
                 break
             case 3:
-                break
+                p.listar_produtos(produtos)
             case 4:
                 break
     
