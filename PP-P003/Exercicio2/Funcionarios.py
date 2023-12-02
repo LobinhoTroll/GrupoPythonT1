@@ -14,6 +14,15 @@ def cadastrarNovoFuncionario(lista_funcionarios):
     salario = float(input())
     lista_funcionarios.append({"RG": rg, "nome": nome, "sobrenome": sobrenome, "admissao": admissao, "salario": salario})
 
+def excluirFuncionario(lista_funcionarios):
+    print("Informe o RG do funcionário")
+    rg = input()
+    for func in lista_funcionarios[:]:
+        if func["RG"] == rg:
+            lista_funcionarios.remove(func)
+            print("Funcionário deletado")
+            return
+    print("Funcionário não foi encontrado")
 
 def listarTodosFuncionarios(lista_funcionarios):
     funcionarios_ordenados = sorted(lista_funcionarios, key=lambda func: func['nome'])

@@ -1,4 +1,4 @@
-from Funcionarios import (cadastrarNovoFuncionario, listarTodosFuncionarios,
+from Funcionarios import (cadastrarNovoFuncionario, excluirFuncionario, listarTodosFuncionarios,
                                 consultarFuncionarioPorRG,
                                 carregarFuncionariosDoArquivo, salvarFuncionariosNoArquivo)
 
@@ -19,7 +19,7 @@ def main():
         if opcao == "1":
             cadastrarNovoFuncionario(funcionarios)
         elif opcao == "2":
-            break
+            excluirFuncionario(funcionarios)
         elif opcao == "3":
             listarTodosFuncionarios(funcionarios)
         elif opcao == "4":
