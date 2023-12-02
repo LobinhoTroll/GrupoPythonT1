@@ -1,28 +1,37 @@
+from Funcionarios import (cadastrarNovoFuncionario, listarTodosFuncionarios,
+                                consultarFuncionarioPorRG,
+                                carregarFuncionariosDoArquivo, salvarFuncionariosNoArquivo)
+
 def main():
-        
-    op = -1
-    while(op != 0):
-        print("/////////////* MENU */////////////")
-        print("1- Adcionar Funcionarios")
-        print("2- Listar Funcionarios")
-        print("3- Excluir Funcionarios")
-        print("4- Consultar Funcionarios")
-        print("5- Reajuste")
-        print("6- Sair")
-        op = int(input())
-        match op:
-            case 1:
-                break
-            case 2:
-                break
-            case 3:
-                break
-            case 4:
-                break
-            case 5:
-                break
-            case 6:
-                break
-    
+    funcionarios = carregarFuncionariosDoArquivo()
+
+    while True:
+        print("\n=== Menu ===")
+        print("1. Cadastrar Novo Funcionário")
+        print("2. Excluir Funcionário")
+        print("3. Listar Todos os Funcionários")
+        print("4. Consultar Funcionário por RG")
+        print("5. Reajustar Salários em 10%")
+        print("6. Sair")
+
+        opcao = input("Escolha uma opção (1-6): ")
+
+        if opcao == "1":
+            cadastrarNovoFuncionario(funcionarios)
+        elif opcao == "2":
+            break
+        elif opcao == "3":
+            listarTodosFuncionarios(funcionarios)
+        elif opcao == "4":
+            consultarFuncionarioPorRG(funcionarios)
+        elif opcao == "5":
+            break
+        elif opcao == "6":
+            salvarFuncionariosNoArquivo(funcionarios)
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
+
 if __name__ == "__main__":
     main()
