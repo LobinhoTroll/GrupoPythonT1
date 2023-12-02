@@ -19,7 +19,7 @@ def main():
             case 3:
                 p.listar_produtos(produtos)
             case 4:
-                break
+                p.consultar_produto(produtos)
     
 if __name__ == "__main__":
     main()

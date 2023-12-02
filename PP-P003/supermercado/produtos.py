@@ -14,7 +14,15 @@ def cadastrar_novo_produto(estoque):
     estoque.append(novo_produto)
     print("Produto cadastrado com sucesso!")
 
-
+def excluir_produto(estoque):
+    print("Digite o código do produto a ser removido")
+    codigo = input().zfill(13)
+    for item in estoque[:]:
+        if item["codigo"] == codigo:
+            estoque.remove(item)
+            print("Produto removido com sucesso.")
+            return
+    print("Produto não encontrado.")
 
 def listar_produtos(estoque):
     produtos_ordenados = sorted(estoque, key=lambda p: p['preco'])
@@ -30,13 +38,15 @@ def listar_produtos(estoque):
             if opcao != 's':
                 return
 
-
-def excluir_produto(estoque):
-    print("Digite o código do produto a ser removido")
+def consultar_produto(estoque):
+    print("Digite o código do produto a ser consultado")
     codigo = input().zfill(13)
-    for item in estoque[:]:
-        if item["codigo"] == codigo:
-            estoque.remove(item)
-            print("Produto removido com sucesso.")
+    
+    for produto in estoque:
+        if produto["codigo"] == codigo:
+            print(f"\nInformações do Produto:")
+            print(f"Nome: {produto['nome']}")
+            print(f"Preço: R$ {produto['preco']:.2f}")
             return
+    
     print("Produto não encontrado.")
